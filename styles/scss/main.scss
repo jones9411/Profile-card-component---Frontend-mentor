@@ -1,0 +1,133 @@
+@use "variables";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #19a1ae;
+  font-size: 18px;
+  font-family: "Kumbh Sans";
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 374px;
+  width: 350px;
+  border-radius: 12px;
+  background-color: #fff;
+  z-index: 10;
+  position: relative;
+
+  .top-img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  .id-image {
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    left: calc(50% - 96px / 2);
+    top: calc(50% - 96px / 2 - 47px);
+    border-radius: 50%;
+    border: 5px solid #fff;
+  }
+
+  .text {
+    margin-top: 55px;
+    text-align: center;
+
+    h2 {
+      font-size: 14px;
+      color: variables.$darkgray;
+      font-weight: 700;
+    }
+    span {
+      color: variables.$darkgray;
+      font-weight: 400;
+    }
+
+    .name {
+      font-size: 18px;
+      color: variables.$verydarkdesaturatedblue;
+    }
+  }
+
+  .stat-cards {
+    border-top: 1px solid #e8e9ec;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .followers,
+    .likes,
+    .photos {
+      height: 40px;
+
+      p {
+        font-size: 10px;
+        color: variables.$darkgray;
+        font-weight: 400;
+      }
+
+      .num {
+        font-size: 18px;
+        font-weight: 700;
+        color: variables.$verydarkdesaturatedblue;
+      }
+    }
+  }
+}
+
+// circles
+.circle {
+  height: 920px;
+  width: 920px;
+  border-radius: 50%;
+}
+
+.top-circle {
+  background: linear-gradient(
+    180deg,
+    rgba(9, 137, 180, 0.0001) 0.78%,
+    #53ffee 99.94%
+  );
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  transform: rotate(-135deg);
+  position: absolute;
+  top: -500px;
+  left: -50px;
+}
+
+.bottom-circle {
+  background: linear-gradient(
+    180deg,
+    rgba(9, 137, 180, 0.0001) 0.78%,
+    #53ffee 99.94%
+  );
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
+  position: absolute;
+  bottom: -550px;
+  right: -235px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+footer {
+  position: absolute;
+  bottom: 5px;
+}

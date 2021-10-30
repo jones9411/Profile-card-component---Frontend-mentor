@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #19a1ae;
+  font-size: 18px;
+  font-family: "Kumbh Sans";
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 374px;
+  width: 350px;
+  border-radius: 12px;
+  background-color: #fff;
+  z-index: 10;
+  position: relative;
+}
+.container .top-img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.container .id-image {
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  left: calc(50% - 96px / 2);
+  top: calc(50% - 96px / 2 - 47px);
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+.container .text {
+  margin-top: 55px;
+  text-align: center;
+}
+.container .text h2 {
+  font-size: 14px;
+  color: #969696;
+  font-weight: 700;
+}
+.container .text span {
+  color: #969696;
+  font-weight: 400;
+}
+.container .text .name {
+  font-size: 18px;
+  color: #2d3248;
+}
+.container .stat-cards {
+  border-top: 1px solid #e8e9ec;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.container .stat-cards .followers,
+.container .stat-cards .likes,
+.container .stat-cards .photos {
+  height: 40px;
+}
+.container .stat-cards .followers p,
+.container .stat-cards .likes p,
+.container .stat-cards .photos p {
+  font-size: 10px;
+  color: #969696;
+  font-weight: 400;
+}
+.container .stat-cards .followers .num,
+.container .stat-cards .likes .num,
+.container .stat-cards .photos .num {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2d3248;
+}
+
+.circle {
+  height: 920px;
+  width: 920px;
+  border-radius: 50%;
+}
+
+.top-circle {
+  background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 0.78%, #53ffee 99.94%);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  transform: rotate(-135deg);
+  position: absolute;
+  top: -500px;
+  left: -50px;
+}
+
+.bottom-circle {
+  background: linear-gradient(180deg, rgba(9, 137, 180, 0.0001) 0.78%, #53ffee 99.94%);
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  transform: matrix(0.71, -0.71, -0.71, -0.71, 0, 0);
+  position: absolute;
+  bottom: -550px;
+  right: -235px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+footer {
+  position: absolute;
+  bottom: 5px;
+}/*# sourceMappingURL=main.css.map */
